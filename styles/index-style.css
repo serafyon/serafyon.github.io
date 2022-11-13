@@ -1,0 +1,230 @@
+:root {
+	--palette1: #1B2430;
+	--palette2: #394147;
+	--palette3: #816797;
+	--palette4: #D6D5A8;
+	--palette5: #1c1827;
+
+	--aesth1: #242227;
+
+
+}
+
+.palette4 {
+	color: var(--palette4)
+}
+
+body {
+	background-color: var(--aesth1);
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+
+}
+
+
+
+@keyframes bgloop {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: 1920px 970px;
+	}
+}
+
+.didact-gothic {
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+.icn {
+	color: white;
+}
+
+.icn:hover {
+	color: white;
+}
+
+.btn:first-child:hover,
+:not(.btn-check)+.btn:hover {
+	color: rgb(56, 51, 32);
+}
+
+.hidden {
+	display: none;
+}
+
+.navbar-expand {
+	background-color: var(--palette5) !important;
+}
+
+.nav-link {
+	color: var(--palette4) !important;
+}
+
+.nav-link:hover {
+	background-color: var(--palette2);
+}
+
+.navtitle:hover {
+	background-color: var(--palette5) !important;
+}
+
+
+.bg-jumbo {
+	background-color: var(--palette5);
+	background-image: url(../assets/jumbo1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-position-x: 50%;
+	background-position-y: 33%;
+	height: clamp(10vh, 80vh, 90vh);
+	transition-duration: 0.3s;
+}
+
+
+.navtitle {
+	letter-spacing: .5em;
+}
+
+.jumbotitle {
+	font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+#subtext{
+	opacity: 0%;
+	
+	animation: fadeinsub 2s;
+	
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeinsub {
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+
+
+#yu::after {
+	content: "yu";
+	animation: yu 3s;
+
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+
+}
+
+#shi::after {
+
+	content: "shi";
+	animation: shi 3s;
+
+	animation-delay: 2.2s;
+	animation-fill-mode: forwards;
+}
+
+#yon::after {
+	content: "yo";
+	animation: yon 3s;
+
+	animation-delay: 2.4s;
+	animation-fill-mode: forwards;
+}
+
+
+#nn::after {
+	content: "n";
+	animation: nn 3s;
+
+	animation-delay: 2.6s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes yu {
+	0% {
+		opacity: 100%;
+	}
+
+	25% {
+		opacity: 0%;
+	}
+
+	80% {
+		content: "ユ";
+	}
+
+	100% {
+		content: "ユ";
+		opacity: 100%;
+	}
+
+}
+
+@keyframes shi {
+	0% {
+		opacity: 100%;
+	}
+
+	25% {
+		opacity: 0%;
+	}
+
+	80% {
+		content: "シ";
+	}
+
+	100% {
+		content: "シ";
+		opacity: 100%;
+	}
+
+}
+
+@keyframes yon {
+	0% {
+		opacity: 100%;
+	}
+
+	25% {
+		opacity: 0%;
+	}
+
+	80% {
+		content: "ヨ";
+	}
+
+	100% {
+		content: "ヨ";
+		opacity: 100%;
+	}
+
+}
+
+@keyframes nn {
+	0% {
+		opacity: 100%;
+	}
+
+	25% {
+		opacity: 0%;
+	}
+
+	80% {
+		content: "ン";
+	}
+
+	100% {
+		content: "ン";
+		opacity: 100%;
+	}
+
+}
