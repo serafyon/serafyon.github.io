@@ -1,5 +1,5 @@
 :root {
-	--palette1: #1B2430;
+	--palette1: #221f31;
 	--palette2: #394147;
 	--palette3: #816797;
 	--palette4: #D6D5A8;
@@ -14,16 +14,30 @@
 	color: var(--palette4)
 }
 
-
-body {
-	background-color: var(--aesth1);
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-
+.palette1 {
+	background-color: var(--palette1);
 }
 
 
+body {
+	background-color: var(--palette5);
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow-x: hidden;
+
+}
+
+body[data-aos-delay='5500'] [data-aos],
+[data-aos][data-aos][data-aos-delay='5500'] {
+  transition-delay: 5500ms;
+}
+
+.card1{
+	background-image: url("https://via.placeholder.com/1000x1000?text=plchldr");
+	background-position: center;
+	background-size: cover;
+}
 
 @keyframes bgloop {
 	from {
@@ -72,6 +86,20 @@ body {
 	background-color: var(--palette5) !important;
 }
 
+.mb-sec{
+	margin-bottom: 10vh;
+}
+
+.border-sec{
+	border-style: dashed !important;
+	border-color: var(--palette4) !important;
+}
+
+.border-opt{
+	border-style: dashed !important;
+	border-color: var(--palette4) !important;
+	
+}
 
 .bg-jumbo {
 	background-color: var(--palette5);
@@ -84,6 +112,7 @@ body {
 	background-position-y: 33%;
 	height: clamp(10vh, 80vh, 90vh);
 	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
 }
 
 
@@ -103,6 +132,15 @@ body {
 	animation-delay: 5s;
 	animation-fill-mode: forwards;
 }
+
+/*#butts{
+	opacity: 0%;
+	
+	animation: fadeinsub 2s;
+	
+	animation-delay: 5.5s;
+	animation-fill-mode: forwards;
+}*/
 
 @keyframes fadeinsub {
 	0%{
@@ -229,3 +267,4 @@ body {
 	}
 
 }
+

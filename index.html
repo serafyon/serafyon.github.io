@@ -27,11 +27,14 @@
 	<!--oh god-->
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
 		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+		
 
 	<script type="text/javascript" src="./scripts/index-js.js"></script>
+
+	<!--Auto OnScroll Library-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -47,46 +50,60 @@
 		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+	<script type="text/javascript">
+		if (document.images) {
+			img1 = new Image();
+			img1.src = "./assets/jumbo.png";
+		}
+		</script>
+
 </head>
 
 <body>
-	<nav class="navbar-expand navbar-dark bg-dark py-1 mb-0">
+	<nav data-aos="fade-down" class="fixed-top navbar-expand navbar-dark bg-dark py-1 mb-0">
 		<div class="container-fluid">
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-lg-0 mx-auto gap-3">
+				<ul class="navbar-nav me-auto mb-lg-0 mx-auto gap-1 gap-md-3 gap-lg-5">
 					<li class="nav-item ">
-						<a class="nav-link px-3 rounded-2" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+						<a class="nav-link px-3 rounded-2" href="https://github.com/serafyon/serafyon.github.io"><i class="fa fa-github" aria-hidden="true"></i></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link px-3 rounded-2" href="#"><i class="fa fa-paint-brush"
+						<a class="nav-link px-3 rounded-2" href="https://yushiyon.carrd.co/#portfolio"><i class="fa fa-paint-brush"
 								aria-hidden="true"></i></a>
 					</li>
 					<li class="palette4 py-2 border-start border-end border-dark px-3 didact-gothic navtitle ps-4">
 						YUSHIYON</li>
 					<li class="nav-item">
-						<a class="nav-link px-3 rounded-2" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a class="nav-link px-3 rounded-2" href="https://twitter.com/_mrrp_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link px-3 rounded-2" href="#"><i class="fa fa-trello" aria-hidden="true"></i></a>
+						<a class="nav-link px-3 rounded-2" href="https://trello.com/b/H80yoIKC/yuus-art-to-do-list"><i class="fa fa-trello" aria-hidden="true"></i></a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div class="mt-0 mb-4 text-white bg-jumbo" id="image">
+	<div class="mt-5 mb-0 text-white bg-jumbo vh-100" id="image">
 		<div class="container-fluid py-5 h-100">
 			<div class="d-flex flex-column align-items-center justify-content-center h-100 gy-0">
 
-				<div class="display-1 text-center jumbotitle"><span id="yu"></span><span id="shi"></span><span
+				<div data-aos="flip-down" data-aos-once="true" class="display-1 text-center jumbotitle"><span id="yu"></span><span id="shi"></span><span
 						id="yon"></span><span id="nn"></span></div>
 				<div class="mt-3 fs-4 fw-lighter text-center" id="subtext">Digital Artist / Aspiring Web Developer</div>
+				<div class="d-md-flex mt-5 pt-5 gap-md-5 gap-2 d-grid didact-gothic">
+					<button data-aos="fade-up" data-aos-delay="5500" data-aos-duration="2000" id="butts" type="button" class="btn rounded-2 palette1 palette4 btn-lg btn-light border-0" onclick="window.open('/rals.html');">RALSEI</button>
+					<button data-aos="fade-up" data-aos-delay="5500" data-aos-duration="2000" id="butts" type="button" class="btn rounded-2 palette1 palette4 btn-lg btn-light border-0">W.I.P</button>
+				</div>
 			</div>
 		</div>
 	</div>
-	<content class="text-center palette4 container-fluid d-block">Work In Progress. You can put rals to sleep <a
-			href="/rals.html">HERE</a><br class="mb-3">=^. .^=</content>
+	
 
-	<br style="margin-bottom: 10em">
+	
+
+
 	<script>
 		var tooltipTriggerList = [].slice.call(
 			document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -96,11 +113,25 @@
 		});
 	</script>
 	<script>
-		const el = document.querySelector("#image");
+		let vwH = window.innerHeight;
+		let vwW = window.innerWidth;
+		
+		var el = document.querySelector("#image");
+
+		console.log(vwH +"and"+ vwW);
+		if (vwW <= 767){
+			el = document.querySelector("#none");;
+			console.log("viewport width is too small, no moving image.");
+		}
 
 		el.addEventListener("mousemove", (e) => {
 			el.style.backgroundPositionY = "calc(" + e.offsetY + "px /5 + 33%)";
 		});</script>
+	<!--Auto OnScroll Library-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	  </script>
 </body>
 
 </html>
