@@ -1,0 +1,203 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Notes</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 31 Mar 2025 08:22:01 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 31 Mar 2025 08:22:00 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Chemistry]]></title><description><![CDATA[ 
+ <br><br><br>A possible format you can use is as follows:<br>[CHEMICAL SHORTHAND] | [PURPOSE] | [EFFECT PER 5u] | [OVERDOSE AMOUNT / SIDE EFFECTS]<br>Side effects can mean that the chemical will cause patient to receive a certain damage type (Like how Phalanxamine heals 1 Genetic but also causes 1 Radiation damage).<br>For Example ( PYRAZINE ):<br>Pyra | Heat | 5u = 50 Heat | 20u OD<br>Calculating the effect per 5u is just multiplying the following:<br>
+if (0.5 units per second) = multiply healing value and 0.5 by 10<br>
+if (0.1 units per second) = multiply healing value and 0.1 by 50<br>You can see these values in the guidebook.<br><br>Superheating is a concept where you set up a specific beaker to be able to instantly mix chemicals that need heat. This can be efficient when handling heat chemicals like Pyrazine and Lacerinol<br>In order to superheat a beaker, you need to apply 1u of either carbon or plasma into a beaker, then put it on a hotplate for 5-10 secs. This will set the beaker's temperature up to thousand kelvins.<br>The superheater beaker will:<br>
+<br>Work when inserted in a chemmaster
+<br>Will NOT work when inserted in a chem dispenser
+<br>Work even if the 1u chemical was removed
+<br>Reset its temps when put in a chem dispenser and dispensed any chemical of any amount
+<br><br>Putting the beaker on the chem dispenser and dispensing any chemical of any amount resets its temperature no matter what.<br><br><br><br>Bic | Brute | 5u = 20 Brute | 15u OD<br>IN ORDER (CHEMMASTER)<br>
+25 Oxygen<br>
+25 Sugar<br>
+50 Carbon<br>
+Buffer Bicaridine<br>
+50 Carbon<br><br>150 BICARIDINE<br><br>Bruiz | Blunt | 5u = 35 Blunt | 10.5u OD<br>IN ORDER (CHEMMASTER)<br>
+25 Lithium<br>
+25 Sugar<br>
+25 Bicaridine<br>
+Buffer Lithium<br><br>50 BRUIZINE<br><br>Punc | Pierce | 5u = 40 Pierce | 11u OD<br>IN ORDER (CHEMMASTER)<br>
+Superheat Beaker<br>
+50 Hydrogen<br>
+50 Oxygen<br>
+Buffer 50 Hydroxide<br>
+50 Bicaridine<br><br>100 PUNCTURASE<br><br>Lace | Pierce | 5u = 30 Slash | 12u OD<br>IN ORDER (CHEMMASTER)<br>
+Superheat Beaker<br>
+50 Hydrogen<br>
+50 Carbon<br>
+50 Bicaridine<br><br>100 LACERINOL<br><br><br>Dylo | Poison | 5u = 10 poison | 20u OD<br>ANY ORDER(CHEM DISPENSER)<br>
+30 Silicon<br>
+30 Potassium<br>
+30 Nitrogen<br><br>90 DYLOVENE<br><br>Diph | Strong Poison | 5u = 30 poison | SAFE<br>IN ORDER(CHEMMASTER)<br>
+75 Hydrogen<br>
+25 Nitrogen<br>
+Buffer 50 Ammonia<br>
+50 Ethanol<br>
+Buffer 100 Diethlyamine<br>
+25 Welding Fuel<br>
+25 Carbon<br>
+25 Hydrogen<br>
+Buffer 75 Oil<br>
+Superheat Beaker<br>
+50 Chlorine<br>
+50 Sodium<br>
+Reset Beaker Temp<br>
+20 Diethylamine<br>
+20 Oil<br>
+20 Table Salt<br>
+20 Carbon<br>
+20 Ethanol<br>
+Put on Hotplate<br><br>60 DIPHENHYDRAMINE<br><br>Ultravasc | Poison | 5u = 30 Poison | 30u OD<br>Grind Lingzhi (Obtained from Botany)<br><br>20 ULTRAVASCULINE<br><br>Stell | Poison | 5u = 40 Poison | SAFE<br>Grind Galaxythistle (Obtained from Botany)<br><br>25 STELLIBININ<br><br><br>Derma | Burns (No Caustic) | 5u = 15 Burns | 10u OD<br>IN ORDER(CHEM DISPENSER)<br>
+15 Silicon<br>
+15 Carbon<br>
+30 Oxygen<br>
+30 Phosphorus<br><br>90 DERMALINE<br><br>Lepo | Colds | 5u = 40 Colds | SAFE<br>IN ORDER(CHEMMASTER)<br>
+Superheat Beaker<br>
+50 Iron<br>
+50 Silicon<br>
+1 Plasma<br>
+25 Copper<br>
+25 Fersilicite<br><br>50 LEPORAZINE<br><br>Pyra | Heat | 5u = 50 Heat | 20u OD<br>IN ORDER(CHEMMASTER)<br>
+Superheat Beaker<br>
+25 Derma<br>
+25 Leporazine<br>
+25 Carbon<br><br>75 PYRAZINE<br><br>Insuz | Shock | 5u = 40 Shock | 12u OD<br>IN ORDER(CHEMMASTER)<br>
+Superheat Beaker<br>
+50 Carbon<br>
+50 Silicon<br>
+25 Leporazine<br>
+25 Kelotane<br>
+25 Silicon<br><br>75 INSUZINE<br><br>Sigy | Caustic | 5u = 30 Caustic | 16u OD<br>IN ORDER(CHEMMASTER)<br>
+Superheat Beaker<br>
+50 Chlorine<br>
+50 Sodium<br>
+Buffer Table Salt<br>
+75 Hydrogen<br>
+25 Nitrogen<br>
+Buffer Ammonia<br>
+25 Ammonia<br>
+25 Table Salt<br>
+25 Oxygen<br>
+25 Carbon<br>
+Buffer Sodium Carbonate<br>
+50 Oxygen<br>
+50 Hydrogen<br>
+Buffer 50 Hydroxide<br>
+50 Sodium<br>
+Buffer Sodium Hydroxide<br>
+50 Silicon<br>
+50 Carbon<br>
+Buffer Kelotane<br>
+20 Sodium Carbonate<br>
+20 Sodium Hydroxide<br>
+20 Kelotane<br>
+20 Water<br>
+20 Sugar<br><br>80 SIGYNATE<br><br><br>Dex+ | Airloss | 5u = 65 Airloss | 25u OD<br>IN ORDER(CHEMMASTER)<br>
+1 Plasma<br>
+50 Oxygen<br>
+Buffer Dexalin and Plasma<br>
+25 Iron<br>
+25 Carbon<br>
+25 Dexalin<br><br>75 DEXALIN PLUS<br><br>Sal | Bloodlevels | 5u = 20% BloodLv | SAFE<br>IN ORDER(CHEMMASTER)<br>
+Superheat Beaker<br>
+20 Chlorine<br>
+20 Sodium<br>
+Put all in jug<br>
+160 Water (Fill Jug)<br><br>200 SALINE<br><br><br>Cryox | All (No Genetic) | 213k<br>IN ORDER(CHEMMASTER)<br>
+1 Plasma<br>
+50 Oxygen<br>
+Buffer Dexalin and Plasma<br>
+25 Water<br>
+25 Oxygen<br>
+25 Dexalin<br><br>75 CRYOXADONE<br><br>Alox | Burns | 213k<br>IN ORDER(CHEMMASTER)<br>
+40 Aloe (Grind Aloe from Botany)<br>
+40 Sigynate<br>
+20 Cryoxadone<br><br>80 ALOXADONE<br><br>Dox | Genetic | 213k<br>ANY ORDER(CHEMMASTER)<br>
+50 Cryoxadone<br>
+50 Phalanxamine<br><br>100 DOXARUBIXADONE<br><br>Necro | Burn Brute Poison | 213k<br>ANY ORDER(CHEMMASTER)<br>
+30 Blood<br>
+20 Cryoxadone<br>
+10 Omnizine (Grind Ambrosia Deus from Botany)<br><br>20 NECROSOL<br><br>Stellox | Toxin | 213k<br>ANY ORDER(CHEMMASTER)<br>
+50 Stellibinin<br>
+30 Cryoxadone<br>
+20 Arithrazine<br>
+Buffer Water and Fiber<br><br>50 STELLOXADONE<br><br>Traumox | Brutes | 213k<br>IN ORDER(CHEMMASTER)<br>
+25 Table Salt (1:1 Chlorine &amp; Sodium + HEAT)<br>
+25 Ethanol<br>
+25 Radium<br>
+Buffer Lipozine<br>
+25 Hydroxide (1:1 Hydrogen &amp; Oxygen + HEAT)<br>
+25 Benzene (1:1 Hydrogen &amp; Carbon + HEAT)<br>
+Buffer Phenol<br>
+20 Phenol<br>
+20 Sodium<br>
+20 Carbon<br>
+20 Oxygen<br>
+20 Sulfuric Acid (2:1:1 Oxygen, Hydrogen &amp; Sulfur)<br>
+Buffer Salicylic Acid<br>
+25 Cryoxadone<br>
+25 Salicylic Acid<br>
+25 Lipozine<br><br>50 TRAUMOXADONE<br><br><br>Arith | Radiation | 5u = 30 Rads | Causes Brute<br>IN ORDER(CHEM DISPENSER)<br>
+5 Silicon<br>
+5 Potassium<br>
+5 Nitrogen<br>
+15 Radium<br>
+30 Hydrogen<br><br>60 ARITHRAZINE<br><br>Phal | Genetic | 5u = 10 Genetic | Causes Rads<br>IN ORDER(CHEM DISPENSER)<br>
+5 Silicon<br>
+5 Potassium<br>
+5 Nitrogen<br>
+25 Radium<br>
+10 Phosphorus<br>
+10 Chlorine<br>
+30 Ethanol<br><br>60 PHALANXAMINE<br><br>Trico | Brute/Burns/Poison | 5u = 10 Brute, 5 Burns &amp; Poison 50DMG | SAFE<br>IN ORDER(CHEM DISPENSER)<br>
+15 Carbon<br>
+15 Oxygen<br>
+15 Sugar<br>
+15 Nitrogen<br>
+15 Potassium<br>
+15 Silicon<br><br>90 TRICORDAZINE<br><br>TDD | All (No Genetic) | 5u = 10 Heal | SAFE<br>Note: You usually bother bar for this<br>IN ORDER(BAR)<br>
+20 Cream<br>
+10 Lime Juice<br>
+10 Orange Juice<br>
+10 Tomato Juice<br>
+10 Tricordazine<br><br>60 THE DOCTOR'S DELIGHT<br><br><br>25 hydrox<br>
+25 benzene<br><br>25 sodium carbonate (25 ammonia, table salt, oxy, carb)<br>
+25 dermaline<br>
+25 phenol<br>
+25 lepo<br><br>100 Oxa<br><br>polytrinic acid<br>
+20 sulfuric acid<br>
+20 plasma<br>
+20 potassium<br>potassium iodide<br>
+50 potassium<br>
+50 iodide<br>haloperidol<br>
+20 aluminum<br>
+20 chlorine<br>
+20 fluorine<br>
+20 oil<br>
+20 potassium iodide<br>cyanide<br>
+25 ammonia<br>
+25 oil<br>
+25 oxygen<br>25 poly<br>
+25 potas<br>
+25 halo<br>
+25 cya<br>
+============ 100 Pentenic<br><br>tranexamic acid<br>
+30 inap<br>
+30 sulfuric acid<br>
+30 sugar<br>fluorosulfuric acid<br>
+25 fluorine<br>
+25 hydrogen<br>
+25 potass<br>
+25 sulfuric acid<br>sodium hydroxide (sodium + hydrox)<br>
+bicaridine ( you can't be this stupid )<br>25 tranex<br>
+25 fluorosulf<br>
+25 sodium hydrox<br>
+25 bic<br>============ 100 salicylic<br><br>Mindbreaker toxin<br>
+Superheat Beaker<br>
+30 silicon<br>
+30 hydrogen<br>
+30 dylovene<br>Synaptizine<br>
+30 lithium<br>
+30 sugar<br>
+30 water<br>30 MB Toxin<br>
+30 Synap<br>
+30 Water<br>90 Pax]]></description><link>stupid-fucking-med-guide.html</link><guid isPermaLink="false">Stupid Fucking Med Guide.md</guid><pubDate>Mon, 31 Mar 2025 08:15:18 GMT</pubDate></item></channel></rss>
