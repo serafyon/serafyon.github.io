@@ -1,220 +1,2021 @@
-<!DOCTYPE html> <html><head>
-		<title>Stupid Fucking Med Guide</title>
-		<base href="./">
-		<meta id="root-path" root-path="./">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
-		<meta charset="UTF-8">
-		<meta name="description" content="Notes - Stupid Fucking Med Guide">
-		<meta property="og:title" content="Yuu's Chem Guide">
-		<meta property="og:description" content="Yuu's Chem Guide">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="chemguide.html">
-		<meta property="og:image" content="undefined">
-		<meta property="og:site_name" content="Notes">
-		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title show-ribbon"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="Chemistry">Chemistry</h1><div class="el-h1 heading-wrapper"><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="LABELLING CHEMICALS" dir="auto" class="heading" id="LABELLING_CHEMICALS"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>LABELLING CHEMICALS</h5><div class="heading-children"><div class="el-p"><p dir="auto">A possible format you can use is as follows:</p></div><div class="el-p"><p dir="auto">[CHEMICAL SHORTHAND] | [PURPOSE] | [EFFECT PER 5u] | [OVERDOSE AMOUNT / SIDE EFFECTS]</p></div><div class="el-p"><p dir="auto">Side effects can mean that the chemical will cause patient to receive a certain damage type (Like how Phalanxamine heals 1 Genetic but also causes 1 Radiation damage).</p></div><div class="el-p"><p dir="auto">For Example ( PYRAZINE ):</p></div><div class="el-p"><p dir="auto">Pyra | Heat | 5u = 50 Heat | 20u OD</p></div><div class="el-p"><p dir="auto">Calculating the effect per 5u is just multiplying the following:<br>
-if (0.5 units per second) = multiply healing value and 0.5 by 10<br>
-if (0.1 units per second) = multiply healing value and 0.1 by 50</p></div><div class="el-p"><p dir="auto">You can see these values in the guidebook.</p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="SUPERHEATING" dir="auto" class="heading" id="SUPERHEATING"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>SUPERHEATING</h5><div class="heading-children"><div class="el-p"><p dir="auto">Superheating is a concept where you set up a specific beaker to be able to instantly mix chemicals that need heat. This can be efficient when handling heat chemicals like Pyrazine and Lacerinol</p></div><div class="el-p"><p dir="auto">In order to superheat a beaker, you need to apply 1u of either carbon or plasma into a beaker, then put it on a hotplate for 5-10 secs. This will set the beaker's temperature up to thousand kelvins.</p></div><div class="el-p"><p dir="auto">The superheater beaker will:</p></div><div class="el-ul"><ul>
-<li data-line="0" dir="auto">Work when inserted in a chemmaster</li>
-<li data-line="1" dir="auto">Will NOT work when inserted in a chem dispenser</li>
-<li data-line="2" dir="auto">Work even if the 1u chemical was removed</li>
-<li data-line="3" dir="auto">Reset its temps when put in a chem dispenser and dispensed any chemical of any amount</li>
-</ul></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="RESET BEAKER TEMP" dir="auto" class="heading" id="RESET_BEAKER_TEMP"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>RESET BEAKER TEMP</h5><div class="heading-children"><div class="el-p"><p dir="auto">Putting the beaker on the chem dispenser and dispensing any chemical of any amount resets its temperature no matter what.</p></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="Recipes" dir="auto" class="heading" id="Recipes"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Recipes</h2><div class="heading-children"><div class="el-h4 heading-wrapper"><h4 data-heading="Brutes" dir="auto" class="heading" id="Brutes"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Brutes</h4><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="[BICARIDINE] \#BIC" dir="auto" class="heading" id="[BICARIDINE]_\#BIC"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[BICARIDINE] #BIC</h6><div class="heading-children"><div class="el-p"><p dir="auto">Bic | Brute | 5u = 20 Brute | 15u OD</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong> (CHEMMASTER)<br>
-25 Oxygen<br>
-25 Sugar<br>
-50 Carbon<br>
-Buffer Bicaridine<br>
-50 Carbon</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>150 BICARIDINE</strong></p></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="[BRUIZINE] \#BRUIZ" dir="auto" class="heading" id="[BRUIZINE]_\#BRUIZ"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[BRUIZINE] #BRUIZ</h6><div class="heading-children"><div class="el-p"><p dir="auto">Bruiz | Blunt | 5u = 35 Blunt | 10.5u OD</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong> (CHEMMASTER)<br>
-25 Lithium<br>
-25 Sugar<br>
-25 Bicaridine<br>
-Buffer Lithium</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>50 BRUIZINE</strong></p></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="[PUNCTURASE] \#PUNC" dir="auto" class="heading" id="[PUNCTURASE]_\#PUNC"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[PUNCTURASE] #PUNC</h6><div class="heading-children"><div class="el-p"><p dir="auto">Punc | Pierce | 5u = 40 Pierce | 11u OD</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong> (CHEMMASTER)<br>
-Superheat Beaker<br>
-50 Hydrogen<br>
-50 Oxygen<br>
-Buffer 50 Hydroxide<br>
-50 Bicaridine</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>100 PUNCTURASE</strong></p></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="[LACERINOL] \#LACE" dir="auto" class="heading" id="[LACERINOL]_\#LACE"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[LACERINOL] #LACE</h6><div class="heading-children"><div class="el-p"><p dir="auto">Lace | Pierce | 5u = 30 Slash | 12u OD</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong> (CHEMMASTER)<br>
-Superheat Beaker<br>
-50 Hydrogen<br>
-50 Carbon<br>
-50 Bicaridine</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>100 LACERINOL</strong></p></div></div></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="Toxins" dir="auto" class="heading" id="Toxins"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Toxins</h4><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="[DYLOVENE] \#DYLO" dir="auto" class="heading" id="[DYLOVENE]_\#DYLO"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[DYLOVENE] #DYLO</h6><div class="heading-children"><div class="el-p"><p dir="auto">Dylo | Poison | 5u = 10 poison | 20u OD</p></div><div class="el-p"><p dir="auto"><strong>ANY ORDER</strong>(CHEM DISPENSER)<br>
-30 Silicon<br>
-30 Potassium<br>
-30 Nitrogen</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>90 DYLOVENE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[DIPHENHYDRAMINE] \#DIPHEN" dir="auto" class="heading" id="[DIPHENHYDRAMINE]_\#DIPHEN"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[DIPHENHYDRAMINE] #DIPHEN</h5><div class="heading-children"><div class="el-p"><p dir="auto">Diph | Strong Poison | 5u = 30 poison | SAFE</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
-75 Hydrogen<br>
-25 Nitrogen<br>
-Buffer 50 Ammonia<br>
-50 Ethanol<br>
-Buffer 100 Diethlyamine<br>
-25 Welding Fuel<br>
-25 Carbon<br>
-25 Hydrogen<br>
-Buffer 75 Oil<br>
-Superheat Beaker<br>
-50 Chlorine<br>
-50 Sodium<br>
-Reset Beaker Temp<br>
-20 Diethylamine<br>
-20 Oil<br>
-20 Table Salt<br>
-20 Carbon<br>
-20 Ethanol<br>
-Put on Hotplate</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>60 DIPHENHYDRAMINE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[ULTRAVASCULINE] \#ULTRAVASC" dir="auto" class="heading" id="[ULTRAVASCULINE]_\#ULTRAVASC"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[ULTRAVASCULINE] #ULTRAVASC</h5><div class="heading-children"><div class="el-p"><p dir="auto">Ultravasc | Poison | 5u = 30 Poison | 30u OD</p></div><div class="el-p"><p dir="auto">Grind Lingzhi (Obtained from Botany)</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>20 ULTRAVASCULINE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[STELLIBININ] \#STELLIB" dir="auto" class="heading" id="[STELLIBININ]_\#STELLIB"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[STELLIBININ] #STELLIB</h5><div class="heading-children"><div class="el-p"><p dir="auto">Stell | Poison | 5u = 40 Poison | SAFE</p></div><div class="el-p"><p dir="auto">Grind Galaxythistle (Obtained from Botany)</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>25 STELLIBININ</strong></p></div></div></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="Burns" dir="auto" class="heading" id="Burns"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Burns</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="[DERMALINE] \#DERMA" dir="auto" class="heading" id="[DERMALINE]_\#DERMA"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[DERMALINE] #DERMA</h5><div class="heading-children"><div class="el-p"><p dir="auto">Derma | Burns (No Caustic) | 5u = 15 Burns | 10u OD</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEM DISPENSER)<br>
-15 Silicon<br>
-15 Carbon<br>
-30 Oxygen<br>
-30 Phosphorus</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>90 DERMALINE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[LEPORAZINE] \#LEPO" dir="auto" class="heading" id="[LEPORAZINE]_\#LEPO"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[LEPORAZINE] #LEPO</h5><div class="heading-children"><div class="el-p"><p dir="auto">Lepo | Colds | 5u = 40 Colds | SAFE</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
-Superheat Beaker<br>
-50 Iron<br>
-50 Silicon<br>
-1 Plasma<br>
-25 Copper<br>
-25 Fersilicite</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>50 LEPORAZINE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[PYRAZINE] \#PYRA" dir="auto" class="heading" id="[PYRAZINE]_\#PYRA"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[PYRAZINE] #PYRA</h5><div class="heading-children"><div class="el-p"><p dir="auto">Pyra | Heat | 5u = 50 Heat | 20u OD</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
-Superheat Beaker<br>
-25 Derma<br>
-25 Leporazine<br>
-25 Carbon</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>75 PYRAZINE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[INSUZINE] \#INSUZ" dir="auto" class="heading" id="[INSUZINE]_\#INSUZ"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[INSUZINE] #INSUZ</h5><div class="heading-children"><div class="el-p"><p dir="auto">Insuz | Shock | 5u = 40 Shock | 12u OD</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
-Superheat Beaker<br>
-50 Carbon<br>
-50 Silicon<br>
-25 Leporazine<br>
-25 Kelotane<br>
-25 Silicon</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>75 INSUZINE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[SIGYNATE] \#SIGY" dir="auto" class="heading" id="[SIGYNATE]_\#SIGY"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[SIGYNATE] #SIGY</h5><div class="heading-children"><div class="el-p"><p dir="auto">Sigy | Caustic | 5u = 30 Caustic | 16u OD</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
-Superheat Beaker<br>
-50 Chlorine<br>
-50 Sodium<br>
-Buffer Table Salt<br>
-75 Hydrogen<br>
-25 Nitrogen<br>
-Buffer Ammonia<br>
-25 Ammonia<br>
-25 Table Salt<br>
-25 Oxygen<br>
-25 Carbon<br>
-Buffer Sodium Carbonate<br>
-50 Oxygen<br>
-50 Hydrogen<br>
-Buffer 50 Hydroxide<br>
-50 Sodium<br>
-Buffer Sodium Hydroxide<br>
-50 Silicon<br>
-50 Carbon<br>
-Buffer Kelotane<br>
-20 Sodium Carbonate<br>
-20 Sodium Hydroxide<br>
-20 Kelotane<br>
-20 Water<br>
-20 Sugar</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>80 SIGYNATE</strong></p></div></div></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="Airloss / Bloodlevels" dir="auto" class="heading" id="Airloss_/_Bloodlevels"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Airloss / Bloodlevels</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="[DEXALIN PLUS] (AIRLOSS) \#DEX+" dir="auto" class="heading" id="[DEXALIN_PLUS]_(AIRLOSS)_\#DEX+"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[DEXALIN PLUS] (AIRLOSS) #DEX+</h5><div class="heading-children"><div class="el-p"><p dir="auto">Dex+ | Airloss | 5u = 65 Airloss | 25u OD</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
-1 Plasma<br>
-50 Oxygen<br>
-Buffer Dexalin and Plasma<br>
-25 Iron<br>
-25 Carbon<br>
-25 Dexalin</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>75 DEXALIN PLUS</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[SALINE] (BLOOD LEVELS) \#SAL" dir="auto" class="heading" id="[SALINE]_(BLOOD_LEVELS)_\#SAL"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[SALINE] (BLOOD LEVELS) #SAL</h5><div class="heading-children"><div class="el-p"><p dir="auto">Sal | Bloodlevels | 5u = 20% BloodLv | SAFE</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
-Superheat Beaker<br>
-20 Chlorine<br>
-20 Sodium<br>
-Put all in jug<br>
-160 Water (Fill Jug)</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>200 SALINE</strong></p></div></div></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="Cryo Chems" dir="auto" class="heading" id="Cryo_Chems"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Cryo Chems</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="[CRYOXADONE] \#CRYOX" dir="auto" class="heading" id="[CRYOXADONE]_\#CRYOX"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[CRYOXADONE] #CRYOX</h5><div class="heading-children"><div class="el-p"><p dir="auto">Cryox | All (No Genetic) | 213k</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
-1 Plasma<br>
-50 Oxygen<br>
-Buffer Dexalin and Plasma<br>
-25 Water<br>
-25 Oxygen<br>
-25 Dexalin</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>75 CRYOXADONE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[ALOXADONE] \#ALOX" dir="auto" class="heading" id="[ALOXADONE]_\#ALOX"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[ALOXADONE] #ALOX</h5><div class="heading-children"><div class="el-p"><p dir="auto">Alox | Burns | 213k</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
-40 Aloe (Grind Aloe from Botany)<br>
-40 Sigynate<br>
-20 Cryoxadone</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>80 ALOXADONE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[DOXARUBIXADONE] (The better Phalanx) \#DOXA" dir="auto" class="heading" id="[DOXARUBIXADONE]_(The_better_Phalanx)_\#DOXA"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[DOXARUBIXADONE] (The better Phalanx) #DOXA</h5><div class="heading-children"><div class="el-p"><p dir="auto">Dox | Genetic | 213k</p></div><div class="el-p"><p dir="auto"><strong>ANY ORDER</strong>(CHEMMASTER)<br>
-50 Cryoxadone<br>
-50 Phalanxamine</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>100 DOXARUBIXADONE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[NECROSOL] (Not often used) \#NECRO" dir="auto" class="heading" id="[NECROSOL]_(Not_often_used)_\#NECRO"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[NECROSOL] (Not often used) #NECRO</h5><div class="heading-children"><div class="el-p"><p dir="auto">Necro | Burn Brute Poison | 213k</p></div><div class="el-p"><p dir="auto"><strong>ANY ORDER</strong>(CHEMMASTER)<br>
-30 Blood<br>
-20 Cryoxadone<br>
-10 Omnizine (Grind Ambrosia Deus from Botany)</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>20 NECROSOL</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[STELLOXADONE] \#STELLOX" dir="auto" class="heading" id="[STELLOXADONE]_\#STELLOX"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[STELLOXADONE] #STELLOX</h5><div class="heading-children"><div class="el-p"><p dir="auto">Stellox | Toxin | 213k</p></div><div class="el-p"><p dir="auto"><strong>ANY ORDER</strong>(CHEMMASTER)<br>
-50 Stellibinin<br>
-30 Cryoxadone<br>
-20 Arithrazine<br>
-Buffer Water and Fiber</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>50 STELLOXADONE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[TRAUMOXADONE] \#TRAUMOX" dir="auto" class="heading" id="[TRAUMOXADONE]_\#TRAUMOX"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[TRAUMOXADONE] #TRAUMOX</h5><div class="heading-children"><div class="el-p"><p dir="auto">Traumox | Brutes | 213k</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
-25 Table Salt (1:1 Chlorine &amp; Sodium + HEAT)<br>
-25 Ethanol<br>
-25 Radium<br>
-Buffer Lipozine<br>
-25 Hydroxide (1:1 Hydrogen &amp; Oxygen + HEAT)<br>
-25 Benzene (1:1 Hydrogen &amp; Carbon + HEAT)<br>
-Buffer Phenol<br>
-20 Phenol<br>
-20 Sodium<br>
-20 Carbon<br>
-20 Oxygen<br>
-20 Sulfuric Acid (2:1:1 Oxygen, Hydrogen &amp; Sulfur)<br>
-Buffer Salicylic Acid<br>
-25 Cryoxadone<br>
-25 Salicylic Acid<br>
-25 Lipozine</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>50 TRAUMOXADONE</strong></p></div></div></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="Others" dir="auto" class="heading" id="Others"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Others</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="[ARITHRAZINE] (Radiation) \#ARITH" dir="auto" class="heading" id="[ARITHRAZINE]_(Radiation)_\#ARITH"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[ARITHRAZINE] (Radiation) #ARITH</h5><div class="heading-children"><div class="el-p"><p dir="auto">Arith | Radiation | 5u = 30 Rads | Causes Brute</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEM DISPENSER)<br>
-5 Silicon<br>
-5 Potassium<br>
-5 Nitrogen<br>
-15 Radium<br>
-30 Hydrogen</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>60 ARITHRAZINE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[PHALANXAMINE] (Genetic, Dox is better now) \#PHALANX" dir="auto" class="heading" id="[PHALANXAMINE]_(Genetic,_Dox_is_better_now)_\#PHALANX"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[PHALANXAMINE] (Genetic, Dox is better now) #PHALANX</h5><div class="heading-children"><div class="el-p"><p dir="auto">Phal | Genetic | 5u = 10 Genetic | Causes Rads</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEM DISPENSER)<br>
-5 Silicon<br>
-5 Potassium<br>
-5 Nitrogen<br>
-25 Radium<br>
-10 Phosphorus<br>
-10 Chlorine<br>
-30 Ethanol</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>60 PHALANXAMINE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[TRICORDAZINE] (You usually don't need this) \#TRICOR" dir="auto" class="heading" id="[TRICORDAZINE]_(You_usually_don't_need_this)_\#TRICOR"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[TRICORDAZINE] (You usually don't need this) #TRICOR</h5><div class="heading-children"><div class="el-p"><p dir="auto">Trico | Brute/Burns/Poison | 5u = 10 Brute, 5 Burns &amp; Poison 50DMG | SAFE</p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(CHEM DISPENSER)<br>
-15 Carbon<br>
-15 Oxygen<br>
-15 Sugar<br>
-15 Nitrogen<br>
-15 Potassium<br>
-15 Silicon</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>90 TRICORDAZINE</strong></p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[THE DOCTOR'S DELIGHT] (Usually the reason why Trico is made) \#TDD" dir="auto" class="heading" id="[THE_DOCTOR'S_DELIGHT]_(Usually_the_reason_why_Trico_is_made)_\#TDD"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[THE DOCTOR'S DELIGHT] (Usually the reason why Trico is made) #TDD</h5><div class="heading-children"><div class="el-p"><p dir="auto">TDD | All (No Genetic) | 5u = 10 Heal | SAFE</p></div><div class="el-p"><p dir="auto"><em>Note: You usually bother bar for this</em></p></div><div class="el-p"><p dir="auto"><strong>IN ORDER</strong>(BAR)<br>
-20 Cream<br>
-10 Lime Juice<br>
-10 Orange Juice<br>
-10 Tomato Juice<br>
-10 Tricordazine</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto"><strong>60 THE DOCTOR'S DELIGHT</strong></p></div></div></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="Unsorted Shit" dir="auto" class="heading" id="Unsorted_Shit"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Unsorted Shit</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="[PHENOL] \#PHENOL" dir="auto" class="heading" id="[PHENOL]_\#PHENOL"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[PHENOL] #PHENOL</h5><div class="heading-children"><div class="el-p"><p dir="auto">25 hydrox<br>
-25 benzene</p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[OXANDROLONE] \#OXA" dir="auto" class="heading" id="[OXANDROLONE]_\#OXA"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[OXANDROLONE] #OXA</h5><div class="heading-children"><div class="el-p"><p dir="auto">25 sodium carbonate (25 ammonia, table salt, oxy, carb)<br>
-25 dermaline<br>
-25 phenol<br>
-25 lepo</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto">100 Oxa</p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[PENTENIC] \#PENT" dir="auto" class="heading" id="[PENTENIC]_\#PENT"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[PENTENIC] #PENT</h5><div class="heading-children"><div class="el-p"><p dir="auto">polytrinic acid<br>
-20 sulfuric acid<br>
-20 plasma<br>
-20 potassium</p></div><div class="el-p"><p dir="auto">potassium iodide<br>
-50 potassium<br>
-50 iodide</p></div><div class="el-p"><p dir="auto">haloperidol<br>
-20 aluminum<br>
-20 chlorine<br>
-20 fluorine<br>
-20 oil<br>
-20 potassium iodide</p></div><div class="el-p"><p dir="auto">cyanide<br>
-25 ammonia<br>
-25 oil<br>
-25 oxygen</p></div><div class="el-p"><p dir="auto">25 poly<br>
-25 potas<br>
-25 halo<br>
-25 cya<br>
-============ 100 Pentenic</p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[SALICYLIC ACID] \#SALIC" dir="auto" class="heading" id="[SALICYLIC_ACID]_\#SALIC"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[SALICYLIC ACID] #SALIC</h5><div class="heading-children"><div class="el-p"><p dir="auto">tranexamic acid<br>
-30 inap<br>
-30 sulfuric acid<br>
-30 sugar</p></div><div class="el-p"><p dir="auto">fluorosulfuric acid<br>
-25 fluorine<br>
-25 hydrogen<br>
-25 potass<br>
-25 sulfuric acid</p></div><div class="el-p"><p dir="auto">sodium hydroxide (sodium + hydrox)<br>
-bicaridine ( you can't be this stupid )</p></div><div class="el-p"><p dir="auto">25 tranex<br>
-25 fluorosulf<br>
-25 sodium hydrox<br>
-25 bic</p></div><div class="el-p"><p dir="auto">============ 100 salicylic</p></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="[PAX] \#PAX" dir="auto" class="heading" id="[PAX]_\#PAX"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[PAX] #PAX</h5><div class="heading-children"><div class="el-p"><p dir="auto">Mindbreaker toxin<br>
-Superheat Beaker<br>
-30 silicon<br>
-30 hydrogen<br>
-30 dylovene</p></div><div class="el-p"><p dir="auto">Synaptizine<br>
-30 lithium<br>
-30 sugar<br>
-30 water</p></div><div class="el-p"><p dir="auto">30 MB Toxin<br>
-30 Synap<br>
-30 Water</p></div><div class="el-p"><p dir="auto">90 Pax</p></div><div class="mod-footer mod-ui"></div></div></div></div></div></div></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
-		<div class="graph-view-container">
-			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
-			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Stupid Fucking Med Guide</title>
+	<base href="./">
+	<meta id="root-path" root-path="./">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+	<meta charset="UTF-8">
+	<meta name="description" content="Notes - Stupid Fucking Med Guide">
+	<meta property="og:title" content="Yuu's Chem Guide">
+	<meta property="og:description" content="Yuu's Chem Guide">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="chemguide.html">
+	<meta property="og:image" content="undefined">
+	<meta property="og:site_name" content="Notes">
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml">
+	<script async="" id="webpage-script" src="lib/scripts/webpage.js"
+		onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script>
+	<script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script>
+	<script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js"
+		onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script>
+	<script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js"
+		onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script>
+	<script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js"
+		onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script>
+	<script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js"
+		onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script>
+	<script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"
+		onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script>
+	<link rel="icon" href="lib/media/favicon.png">
+	<script async="" id="graph-data-script" src="lib/scripts/graph-data.js"
+		onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script>
+	<style>
+		body {
+			--line-width: 40em;
+			--line-width-adaptive: 40em;
+			--file-line-width: 40em;
+			--sidebar-width: min(20em, 80vw);
+			--collapse-arrow-size: 11px;
+			--tree-horizontal-spacing: 0.6em;
+			--tree-vertical-spacing: 0.6em;
+			--sidebar-margin: 12px
+		}
+
+		.sidebar {
+			height: 100%;
+			min-width: calc(var(--sidebar-width) + var(--divider-width-hover));
+			max-width: calc(var(--sidebar-width) + var(--divider-width-hover));
+			font-size: 14px;
+			z-index: 10;
+			position: relative;
+			overflow: hidden;
+			transition: min-width ease-in-out, max-width ease-in-out;
+			transition-duration: .2s;
+			contain: size
+		}
+
+		.sidebar-left {
+			left: 0
+		}
+
+		.sidebar-right {
+			right: 0
+		}
+
+		.sidebar.is-collapsed {
+			min-width: 0;
+			max-width: 0
+		}
+
+		body.floating-sidebars .sidebar {
+			position: absolute
+		}
+
+		.sidebar-content {
+			height: 100%;
+			min-width: calc(var(--sidebar-width) - var(--divider-width-hover));
+			top: 0;
+			padding: var(--sidebar-margin);
+			padding-top: 4em;
+			line-height: var(--line-height-tight);
+			background-color: var(--background-secondary);
+			transition: background-color, border-right, border-left, box-shadow;
+			transition-duration: var(--color-fade-speed);
+			transition-timing-function: ease-in-out;
+			position: absolute;
+			display: flex;
+			flex-direction: column
+		}
+
+		.sidebar:not(.is-collapsed) .sidebar-content {
+			min-width: calc(max(100%, var(--sidebar-width)) - 3px);
+			max-width: calc(max(100%, var(--sidebar-width)) - 3px)
+		}
+
+		.sidebar-left .sidebar-content {
+			left: 0;
+			border-top-right-radius: var(--radius-l);
+			border-bottom-right-radius: var(--radius-l)
+		}
+
+		.sidebar-right .sidebar-content {
+			right: 0;
+			border-top-left-radius: var(--radius-l);
+			border-bottom-left-radius: var(--radius-l)
+		}
+
+		.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty) {
+			display: none
+		}
+
+		.sidebar-topbar {
+			height: 2em;
+			width: var(--sidebar-width);
+			top: var(--sidebar-margin);
+			padding-inline: var(--sidebar-margin);
+			z-index: 1;
+			position: fixed;
+			display: flex;
+			align-items: center;
+			transition: width ease-in-out;
+			transition-duration: inherit
+		}
+
+		.sidebar.is-collapsed .sidebar-topbar {
+			width: calc(2.3em + var(--sidebar-margin) * 2)
+		}
+
+		.sidebar .sidebar-topbar.is-collapsed {
+			width: 0
+		}
+
+		.sidebar-left .sidebar-topbar {
+			left: 0
+		}
+
+		.sidebar-right .sidebar-topbar {
+			right: 0
+		}
+
+		.topbar-content {
+			overflow: hidden;
+			overflow: clip;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			transition: inherit
+		}
+
+		.sidebar.is-collapsed .topbar-content {
+			width: 0;
+			transition: inherit
+		}
+
+		.clickable-icon.sidebar-collapse-icon {
+			background-color: transparent;
+			color: var(--icon-color-focused);
+			padding: 0 !important;
+			margin: 0 !important;
+			height: 100% !important;
+			width: 2.3em !important;
+			margin-inline: 0.14em !important;
+			position: absolute
+		}
+
+		.sidebar-left .clickable-icon.sidebar-collapse-icon {
+			transform: rotateY(180deg);
+			right: var(--sidebar-margin)
+		}
+
+		.sidebar-right .clickable-icon.sidebar-collapse-icon {
+			transform: rotateY(180deg);
+			left: var(--sidebar-margin)
+		}
+
+		.clickable-icon.sidebar-collapse-icon svg.svg-icon {
+			width: 100%;
+			height: 100%
+		}
+
+		.sidebar-section-header {
+			margin: 0 0 1em 0;
+			text-transform: uppercase;
+			letter-spacing: .06em;
+			font-weight: 600
+		}
+
+		body {
+			transition: background-color var(--color-fade-speed) ease-in-out
+		}
+
+		.webpage-container {
+			display: flex;
+			flex-direction: row;
+			height: 100%;
+			width: 100%;
+			align-items: stretch;
+			justify-content: center
+		}
+
+		.document-container {
+			opacity: 1;
+			flex-basis: 100%;
+			max-width: 100%;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: opacity .2s ease-in-out;
+			contain: inline-size
+		}
+
+		.hide {
+			opacity: 0;
+			transition: opacity .2s ease-in-out
+		}
+
+		.document-container>.markdown-preview-view {
+			margin: var(--sidebar-margin);
+			margin-bottom: 0;
+			width: 100%;
+			width: -webkit-fill-available;
+			width: -moz-available;
+			width: fill-available;
+			background-color: var(--background-primary);
+			transition: background-color var(--color-fade-speed) ease-in-out;
+			border-top-right-radius: var(--window-radius, var(--radius-m));
+			border-top-left-radius: var(--window-radius, var(--radius-m));
+			overflow-x: hidden !important;
+			overflow-y: auto !important;
+			display: flex !important;
+			flex-direction: column !important;
+			align-items: center !important;
+			contain: inline-size
+		}
+
+		.document-container>.markdown-preview-view>.markdown-preview-sizer {
+			padding-bottom: 80vh !important;
+			width: 100% !important;
+			max-width: var(--line-width) !important;
+			flex-basis: var(--line-width) !important;
+			transition: background-color var(--color-fade-speed) ease-in-out;
+			contain: inline-size
+		}
+
+		.markdown-rendered img:not([width]),
+		.view-content img:not([width]) {
+			max-width: 100%;
+			outline: 0
+		}
+
+		.document-container>.view-content.embed {
+			display: flex;
+			padding: 1em;
+			height: 100%;
+			width: 100%;
+			align-items: center;
+			justify-content: center
+		}
+
+		.document-container>.view-content.embed>* {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain
+		}
+
+		:has(> :is(.math, table)) {
+			overflow-x: auto !important
+		}
+
+		.document-container>.view-content {
+			overflow-x: auto;
+			contain: content;
+			padding: 0;
+			margin: 0;
+			height: 100%
+		}
+
+		.scroll-highlight {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+			z-index: 1000;
+			background-color: hsla(var(--color-accent-hsl), .25);
+			opacity: 0;
+			padding: 1em;
+			inset: 50%;
+			translate: -50% -50%;
+			border-radius: var(--radius-s)
+		}
+	</style>
+	<script defer="">
+		async function loadIncludes() {
+			if ("file:" != location.protocol) {
+				let e = document.querySelectorAll("include");
+				for (let t = 0; t < e.length; t++) {
+					let o = e[t],
+						l = o.getAttribute("src");
+					try {
+						const e = await fetch(l);
+						if (!e.ok) {
+							console.log("Could not include file: " + l), o ?.remove();
+							continue
+						}
+						let t = await e.text(),
+							n = document.createRange().createContextualFragment(t),
+							i = Array.from(n.children);
+						for (let e of i) e.classList.add("hide"), e.style.transition = "opacity 0.5s ease-in-out",
+							setTimeout((() => {
+								e.classList.remove("hide")
+							}), 10);
+						o.before(n), o.remove(), console.log("Included file: " + l)
+					} catch (e) {
+						o ?.remove(), console.log("Could not include file: " + l, e);
+						continue
+					}
+				}
+			} else {
+				if (document.querySelectorAll("include").length > 0) {
+					var e = document.createElement("div");
+					e.id = "error", e.textContent =
+						"Web server exports must be hosted on an http / web server to be viewed correctly.", e.style
+						.position = "fixed", e.style.top = "50%", e.style.left = "50%", e.style.transform =
+						"translate(-50%, -50%)", e.style.fontSize = "1.5em", e.style.fontWeight = "bold", e.style
+						.textAlign = "center", document.body.appendChild(e), document.querySelector(
+						".document-container") ?.classList.remove("hide")
+				}
+			}
+		}
+		document.addEventListener("DOMContentLoaded", (() => {
+			loadIncludes()
+		}));
+		let isFileProtocol = "file:" == location.protocol;
+
+		function waitLoadScripts(e, t) {
+			let o = e.map((e => document.getElementById(e + "-script"))),
+				l = 0;
+			! function e() {
+				let n = o[l];
+				l++, n && "true" != n.getAttribute("loaded") || l < o.length && e(), l < o.length ? n.addEventListener("load",
+					e) : t()
+			}()
+		}
+	</script>
+	<link rel="stylesheet" href="lib/styles/obsidian.css">
+	<link rel="preload" href="lib/styles/global-variable-styles.css" as="style"
+		onload="this.onload=null;this.rel='stylesheet'"><noscript>
+		<link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript>
+	<link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="lib/styles/main-styles.css"></noscript>
+</head>
+
+<body class="publish css-settings-manager theme-dark show-inline-title show-ribbon">
+	<script defer="">
+		let theme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" :
+			"light");
+		"dark" == theme ? (document.body.classList.add("theme-dark"), document.body.classList.remove("theme-light")) : (
+				document.body.classList.add("theme-light"), document.body.classList.remove("theme-dark")), window.innerWidth <
+			480 ? document.body.classList.add("is-phone") : window.innerWidth < 768 ? document.body.classList.add(
+			"is-tablet") : window.innerWidth < 1024 ? document.body.classList.add("is-small-screen") : document.body.classList
+			.add("is-large-screen")
+	</script>
+	<div class="webpage-container workspace">
+		<div class="sidebar-left sidebar">
+			<div class="sidebar-handle"></div>
+			<div class="sidebar-topbar">
+				<div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input
+							class="theme-toggle-input" type="checkbox" id="theme_toggle">
+						<div class="toggle-background"></div>
+					</label></div>
+				<div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+						height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+						stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+						<path
+							d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z">
+						</path>
+						<path d="M10 4V20"></path>
+						<path d="M4 7H7"></path>
+						<path d="M4 10H7"></path>
+						<path d="M4 13H7"></path>
+					</svg></div>
+			</div>
+			<div class="sidebar-content">
+				<div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false"
+						placeholder="Search...">
+					<div class="search-input-clear-button" aria-label="Clear search"></div>
+				</div>
+				<include src="lib/html/file-tree.html"></include>
+			</div>
+			<script defer="">
+				let ls = document.querySelector(".sidebar-left");
+				ls.classList.add("is-collapsed");
+				if (window.innerWidth > 768) ls.classList.remove("is-collapsed");
+				ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));
+			</script>
 		</div>
-		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="stupid-fucking-med-guide.html#Chemistry"><div class="tree-item-contents heading-link" heading-name="Chemistry"><span class="tree-item-title">Chemistry</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#LABELLING_CHEMICALS"><div class="tree-item-contents heading-link" heading-name="LABELLING CHEMICALS"><span class="tree-item-title">LABELLING CHEMICALS</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#SUPERHEATING"><div class="tree-item-contents heading-link" heading-name="SUPERHEATING"><span class="tree-item-title">SUPERHEATING</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#RESET_BEAKER_TEMP"><div class="tree-item-contents heading-link" heading-name="RESET BEAKER TEMP"><span class="tree-item-title">RESET BEAKER TEMP</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="stupid-fucking-med-guide.html#Recipes"><div class="tree-item-contents heading-link" heading-name="Recipes"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Recipes</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="stupid-fucking-med-guide.html#Brutes"><div class="tree-item-contents heading-link" heading-name="Brutes"><span class="tree-item-title">Brutes</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="stupid-fucking-med-guide.html#[BICARIDINE]_\#BIC"><div class="tree-item-contents heading-link" heading-name="[BICARIDINE] \#BIC"><span class="tree-item-title">[BICARIDINE] #BIC</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="stupid-fucking-med-guide.html#[BRUIZINE]_\#BRUIZ"><div class="tree-item-contents heading-link" heading-name="[BRUIZINE] \#BRUIZ"><span class="tree-item-title">[BRUIZINE] #BRUIZ</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="stupid-fucking-med-guide.html#[PUNCTURASE]_\#PUNC"><div class="tree-item-contents heading-link" heading-name="[PUNCTURASE] \#PUNC"><span class="tree-item-title">[PUNCTURASE] #PUNC</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="stupid-fucking-med-guide.html#[LACERINOL]_\#LACE"><div class="tree-item-contents heading-link" heading-name="[LACERINOL] \#LACE"><span class="tree-item-title">[LACERINOL] #LACE</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="stupid-fucking-med-guide.html#Toxins"><div class="tree-item-contents heading-link" heading-name="Toxins"><span class="tree-item-title">Toxins</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="stupid-fucking-med-guide.html#[DYLOVENE]_\#DYLO"><div class="tree-item-contents heading-link" heading-name="[DYLOVENE] \#DYLO"><span class="tree-item-title">[DYLOVENE] #DYLO</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[DIPHENHYDRAMINE]_\#DIPHEN"><div class="tree-item-contents heading-link" heading-name="[DIPHENHYDRAMINE] \#DIPHEN"><span class="tree-item-title">[DIPHENHYDRAMINE] #DIPHEN</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[ULTRAVASCULINE]_\#ULTRAVASC"><div class="tree-item-contents heading-link" heading-name="[ULTRAVASCULINE] \#ULTRAVASC"><span class="tree-item-title">[ULTRAVASCULINE] #ULTRAVASC</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[STELLIBININ]_\#STELLIB"><div class="tree-item-contents heading-link" heading-name="[STELLIBININ] \#STELLIB"><span class="tree-item-title">[STELLIBININ] #STELLIB</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="stupid-fucking-med-guide.html#Burns"><div class="tree-item-contents heading-link" heading-name="Burns"><span class="tree-item-title">Burns</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[DERMALINE]_\#DERMA"><div class="tree-item-contents heading-link" heading-name="[DERMALINE] \#DERMA"><span class="tree-item-title">[DERMALINE] #DERMA</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[LEPORAZINE]_\#LEPO"><div class="tree-item-contents heading-link" heading-name="[LEPORAZINE] \#LEPO"><span class="tree-item-title">[LEPORAZINE] #LEPO</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[PYRAZINE]_\#PYRA"><div class="tree-item-contents heading-link" heading-name="[PYRAZINE] \#PYRA"><span class="tree-item-title">[PYRAZINE] #PYRA</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[INSUZINE]_\#INSUZ"><div class="tree-item-contents heading-link" heading-name="[INSUZINE] \#INSUZ"><span class="tree-item-title">[INSUZINE] #INSUZ</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[SIGYNATE]_\#SIGY"><div class="tree-item-contents heading-link" heading-name="[SIGYNATE] \#SIGY"><span class="tree-item-title">[SIGYNATE] #SIGY</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="stupid-fucking-med-guide.html#Airloss_/_Bloodlevels"><div class="tree-item-contents heading-link" heading-name="Airloss / Bloodlevels"><span class="tree-item-title">Airloss / Bloodlevels</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[DEXALIN_PLUS]_(AIRLOSS)_\#DEX+"><div class="tree-item-contents heading-link" heading-name="[DEXALIN PLUS] (AIRLOSS) \#DEX+"><span class="tree-item-title">[DEXALIN PLUS] (AIRLOSS) #DEX+</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[SALINE]_(BLOOD_LEVELS)_\#SAL"><div class="tree-item-contents heading-link" heading-name="[SALINE] (BLOOD LEVELS) \#SAL"><span class="tree-item-title">[SALINE] (BLOOD LEVELS) #SAL</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="stupid-fucking-med-guide.html#Cryo_Chems"><div class="tree-item-contents heading-link" heading-name="Cryo Chems"><span class="tree-item-title">Cryo Chems</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[CRYOXADONE]_\#CRYOX"><div class="tree-item-contents heading-link" heading-name="[CRYOXADONE] \#CRYOX"><span class="tree-item-title">[CRYOXADONE] #CRYOX</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[ALOXADONE]_\#ALOX"><div class="tree-item-contents heading-link" heading-name="[ALOXADONE] \#ALOX"><span class="tree-item-title">[ALOXADONE] #ALOX</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[DOXARUBIXADONE]_(The_better_Phalanx)_\#DOXA"><div class="tree-item-contents heading-link" heading-name="[DOXARUBIXADONE] (The better Phalanx) \#DOXA"><span class="tree-item-title">[DOXARUBIXADONE] (The better Phalanx) #DOXA</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[NECROSOL]_(Not_often_used)_\#NECRO"><div class="tree-item-contents heading-link" heading-name="[NECROSOL] (Not often used) \#NECRO"><span class="tree-item-title">[NECROSOL] (Not often used) #NECRO</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[STELLOXADONE]_\#STELLOX"><div class="tree-item-contents heading-link" heading-name="[STELLOXADONE] \#STELLOX"><span class="tree-item-title">[STELLOXADONE] #STELLOX</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[TRAUMOXADONE]_\#TRAUMOX"><div class="tree-item-contents heading-link" heading-name="[TRAUMOXADONE] \#TRAUMOX"><span class="tree-item-title">[TRAUMOXADONE] #TRAUMOX</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="stupid-fucking-med-guide.html#Others"><div class="tree-item-contents heading-link" heading-name="Others"><span class="tree-item-title">Others</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[ARITHRAZINE]_(Radiation)_\#ARITH"><div class="tree-item-contents heading-link" heading-name="[ARITHRAZINE] (Radiation) \#ARITH"><span class="tree-item-title">[ARITHRAZINE] (Radiation) #ARITH</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[PHALANXAMINE]_(Genetic,_Dox_is_better_now)_\#PHALANX"><div class="tree-item-contents heading-link" heading-name="[PHALANXAMINE] (Genetic, Dox is better now) \#PHALANX"><span class="tree-item-title">[PHALANXAMINE] (Genetic, Dox is better now) #PHALANX</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[TRICORDAZINE]_(You_usually_don't_need_this)_\#TRICOR"><div class="tree-item-contents heading-link" heading-name="[TRICORDAZINE] (You usually don't need this) \#TRICOR"><span class="tree-item-title">[TRICORDAZINE] (You usually don't need this) #TRICOR</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[THE_DOCTOR'S_DELIGHT]_(Usually_the_reason_why_Trico_is_made)_\#TDD"><div class="tree-item-contents heading-link" heading-name="[THE DOCTOR'S DELIGHT] (Usually the reason why Trico is made) \#TDD"><span class="tree-item-title">[THE DOCTOR'S DELIGHT] (Usually the reason why Trico is made) #TDD</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="stupid-fucking-med-guide.html#Unsorted_Shit"><div class="tree-item-contents heading-link" heading-name="Unsorted Shit"><span class="tree-item-title">Unsorted Shit</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[PHENOL]_\#PHENOL"><div class="tree-item-contents heading-link" heading-name="[PHENOL] \#PHENOL"><span class="tree-item-title">[PHENOL] #PHENOL</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[OXANDROLONE]_\#OXA"><div class="tree-item-contents heading-link" heading-name="[OXANDROLONE] \#OXA"><span class="tree-item-title">[OXANDROLONE] #OXA</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[PENTENIC]_\#PENT"><div class="tree-item-contents heading-link" heading-name="[PENTENIC] \#PENT"><span class="tree-item-title">[PENTENIC] #PENT</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[SALICYLIC_ACID]_\#SALIC"><div class="tree-item-contents heading-link" heading-name="[SALICYLIC ACID] \#SALIC"><span class="tree-item-title">[SALICYLIC ACID] #SALIC</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="stupid-fucking-med-guide.html#[PAX]_\#PAX"><div class="tree-item-contents heading-link" heading-name="[PAX] \#PAX"><span class="tree-item-title">[PAX] #PAX</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>
+		<div class="document-container markdown-reading-view hide">
+			<div
+				class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width">
+				<style id="MJX-CHTML-styles"></style>
+				<div class="markdown-preview-sizer markdown-preview-section">
+					<h1 class="page-title heading inline-title" id="Chemistry">Chemistry</h1>
+					<div class="el-h1 heading-wrapper">
+						<div class="heading-children">
+							<div class="el-h5 heading-wrapper">
+								<h5 data-heading="LABELLING CHEMICALS" dir="auto" class="heading"
+									id="LABELLING_CHEMICALS">
+									<div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+											xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round"
+											class="svg-icon right-triangle">
+											<path d="M3 8L12 17L21 8"></path>
+										</svg></div>LABELLING CHEMICALS
+								</h5>
+								<div class="heading-children">
+									<div class="el-p">
+										<p dir="auto">A possible format you can use is as follows:</p>
+									</div>
+									<div class="el-p">
+										<p dir="auto">[CHEMICAL SHORTHAND] | [PURPOSE] | [EFFECT PER 5u] | [OVERDOSE
+											AMOUNT / SIDE EFFECTS]</p>
+									</div>
+									<div class="el-p">
+										<p dir="auto">Side effects can mean that the chemical will cause patient to
+											receive a certain damage type (Like how Phalanxamine heals 1 Genetic but
+											also causes 1 Radiation damage).</p>
+									</div>
+									<div class="el-p">
+										<p dir="auto">For Example ( PYRAZINE ):</p>
+									</div>
+									<div class="el-p">
+										<p dir="auto">Pyra | Heat | 5u = 50 Heat | 20u OD</p>
+									</div>
+									<div class="el-p">
+										<p dir="auto">Calculating the effect per 5u is just multiplying the
+											following:<br>
+											if (0.5 units per second) = multiply healing value and 0.5 by 10<br>
+											if (0.1 units per second) = multiply healing value and 0.1 by 50</p>
+									</div>
+									<div class="el-p">
+										<p dir="auto">You can see these values in the guidebook.</p>
+									</div>
+								</div>
+							</div>
+							<div class="el-h5 heading-wrapper">
+								<h5 data-heading="SUPERHEATING" dir="auto" class="heading" id="SUPERHEATING">
+									<div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+											xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round"
+											class="svg-icon right-triangle">
+											<path d="M3 8L12 17L21 8"></path>
+										</svg></div>SUPERHEATING
+								</h5>
+								<div class="heading-children">
+									<div class="el-p">
+										<p dir="auto">Superheating is a concept where you set up a specific beaker to be
+											able to instantly mix chemicals that need heat. This can be efficient when
+											handling heat chemicals like Pyrazine and Lacerinol</p>
+									</div>
+									<div class="el-p">
+										<p dir="auto">In order to superheat a beaker, you need to apply 1u of either
+											carbon or plasma into a beaker, then put it on a hotplate for 5-10 secs.
+											This will set the beaker's temperature up to thousand kelvins.</p>
+									</div>
+									<div class="el-p">
+										<p dir="auto">The superheater beaker will:</p>
+									</div>
+									<div class="el-ul">
+										<ul>
+											<li data-line="0" dir="auto">Work when inserted in a chemmaster</li>
+											<li data-line="1" dir="auto">Will NOT work when inserted in a chem dispenser
+											</li>
+											<li data-line="2" dir="auto">Work even if the 1u chemical was removed</li>
+											<li data-line="3" dir="auto">Reset its temps when put in a chem dispenser
+												and dispensed any chemical of any amount</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="el-h5 heading-wrapper">
+								<h5 data-heading="RESET BEAKER TEMP" dir="auto" class="heading" id="RESET_BEAKER_TEMP">
+									<div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+											xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round"
+											class="svg-icon right-triangle">
+											<path d="M3 8L12 17L21 8"></path>
+										</svg></div>RESET BEAKER TEMP
+								</h5>
+								<div class="heading-children">
+									<div class="el-p">
+										<p dir="auto">Putting the beaker on the chem dispenser and dispensing any
+											chemical of any amount resets its temperature no matter what.</p>
+									</div>
+								</div>
+							</div>
+							<div class="el-h2 heading-wrapper">
+								<h2 data-heading="Recipes" dir="auto" class="heading" id="Recipes">
+									<div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+											xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round"
+											class="svg-icon right-triangle">
+											<path d="M3 8L12 17L21 8"></path>
+										</svg></div>Recipes
+								</h2>
+								<div class="heading-children">
+									<div class="el-h4 heading-wrapper">
+										<h4 data-heading="Brutes" dir="auto" class="heading" id="Brutes">
+											<div class="heading-collapse-indicator collapse-indicator collapse-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+													viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+													class="svg-icon right-triangle">
+													<path d="M3 8L12 17L21 8"></path>
+												</svg></div>Brutes
+										</h4>
+										<div class="heading-children">
+											<div class="el-h6 heading-wrapper">
+												<h6 data-heading="[BICARIDINE] \#BIC" dir="auto" class="heading"
+													id="[BICARIDINE]_\#BIC">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[BICARIDINE] #BIC
+												</h6>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Bic | Brute | 5u = 20 Brute | 15u OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong> (CHEMMASTER)<br>
+															25 Oxygen<br>
+															25 Sugar<br>
+															50 Carbon<br>
+															Buffer Bicaridine<br>
+															50 Carbon</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>150 BICARIDINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h6 heading-wrapper">
+												<h6 data-heading="[BRUIZINE] \#BRUIZ" dir="auto" class="heading"
+													id="[BRUIZINE]_\#BRUIZ">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[BRUIZINE] #BRUIZ
+												</h6>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Bruiz | Blunt | 5u = 35 Blunt | 10.5u OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong> (CHEMMASTER)<br>
+															25 Lithium<br>
+															25 Sugar<br>
+															25 Bicaridine<br>
+															Buffer Lithium</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>50 BRUIZINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h6 heading-wrapper">
+												<h6 data-heading="[PUNCTURASE] \#PUNC" dir="auto" class="heading"
+													id="[PUNCTURASE]_\#PUNC">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[PUNCTURASE] #PUNC
+												</h6>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Punc | Pierce | 5u = 40 Pierce | 11u OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong> (CHEMMASTER)<br>
+															Superheat Beaker<br>
+															50 Hydrogen<br>
+															50 Oxygen<br>
+															Buffer 50 Hydroxide<br>
+															50 Bicaridine</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>100 PUNCTURASE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h6 heading-wrapper">
+												<h6 data-heading="[LACERINOL] \#LACE" dir="auto" class="heading"
+													id="[LACERINOL]_\#LACE">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[LACERINOL] #LACE
+												</h6>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Lace | Pierce | 5u = 30 Slash | 12u OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong> (CHEMMASTER)<br>
+															Superheat Beaker<br>
+															50 Hydrogen<br>
+															50 Carbon<br>
+															50 Bicaridine</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>100 LACERINOL</strong></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="el-h4 heading-wrapper">
+										<h4 data-heading="Toxins" dir="auto" class="heading" id="Toxins">
+											<div class="heading-collapse-indicator collapse-indicator collapse-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+													viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+													class="svg-icon right-triangle">
+													<path d="M3 8L12 17L21 8"></path>
+												</svg></div>Toxins
+										</h4>
+										<div class="heading-children">
+											<div class="el-h6 heading-wrapper">
+												<h6 data-heading="[DYLOVENE] \#DYLO" dir="auto" class="heading"
+													id="[DYLOVENE]_\#DYLO">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[DYLOVENE] #DYLO
+												</h6>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Dylo | Poison | 5u = 10 poison | 20u OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>ANY ORDER</strong>(CHEM DISPENSER)<br>
+															30 Silicon<br>
+															30 Potassium<br>
+															30 Nitrogen</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>90 DYLOVENE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[DIPHENHYDRAMINE] \#DIPHEN" dir="auto" class="heading"
+													id="[DIPHENHYDRAMINE]_\#DIPHEN">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[DIPHENHYDRAMINE] #DIPHEN
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Diph | Strong Poison | 5u = 30 poison | SAFE</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
+															75 Hydrogen<br>
+															25 Nitrogen<br>
+															Buffer 50 Ammonia<br>
+															50 Ethanol<br>
+															Buffer 100 Diethlyamine<br>
+															25 Welding Fuel<br>
+															25 Carbon<br>
+															25 Hydrogen<br>
+															Buffer 75 Oil<br>
+															Superheat Beaker<br>
+															50 Chlorine<br>
+															50 Sodium<br>
+															Reset Beaker Temp<br>
+															20 Diethylamine<br>
+															20 Oil<br>
+															20 Table Salt<br>
+															20 Carbon<br>
+															20 Ethanol<br>
+															Put on Hotplate</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>60 DIPHENHYDRAMINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[ULTRAVASCULINE] \#ULTRAVASC" dir="auto"
+													class="heading" id="[ULTRAVASCULINE]_\#ULTRAVASC">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[ULTRAVASCULINE] #ULTRAVASC
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Ultravasc | Poison | 5u = 30 Poison | 30u OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">Grind Lingzhi (Obtained from Botany)</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>20 ULTRAVASCULINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[STELLIBININ] \#STELLIB" dir="auto" class="heading"
+													id="[STELLIBININ]_\#STELLIB">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[STELLIBININ] #STELLIB
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Stell | Poison | 5u = 40 Poison | SAFE</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">Grind Galaxythistle (Obtained from Botany)</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>25 STELLIBININ</strong></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="el-h4 heading-wrapper">
+										<h4 data-heading="Burns" dir="auto" class="heading" id="Burns">
+											<div class="heading-collapse-indicator collapse-indicator collapse-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+													viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+													class="svg-icon right-triangle">
+													<path d="M3 8L12 17L21 8"></path>
+												</svg></div>Burns
+										</h4>
+										<div class="heading-children">
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[DERMALINE] \#DERMA" dir="auto" class="heading"
+													id="[DERMALINE]_\#DERMA">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[DERMALINE] #DERMA
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Derma | Burns (No Caustic) | 5u = 15 Burns | 10u
+															OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEM DISPENSER)<br>
+															15 Silicon<br>
+															15 Carbon<br>
+															30 Oxygen<br>
+															30 Phosphorus</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>90 DERMALINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[LEPORAZINE] \#LEPO" dir="auto" class="heading"
+													id="[LEPORAZINE]_\#LEPO">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[LEPORAZINE] #LEPO
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Lepo | Colds | 5u = 40 Colds | SAFE</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
+															Superheat Beaker<br>
+															50 Iron<br>
+															50 Silicon<br>
+															1 Plasma<br>
+															25 Copper<br>
+															25 Fersilicite</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>50 LEPORAZINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[PYRAZINE] \#PYRA" dir="auto" class="heading"
+													id="[PYRAZINE]_\#PYRA">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[PYRAZINE] #PYRA
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Pyra | Heat | 5u = 50 Heat | 20u OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
+															Superheat Beaker<br>
+															25 Derma<br>
+															25 Leporazine<br>
+															25 Carbon</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>75 PYRAZINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[INSUZINE] \#INSUZ" dir="auto" class="heading"
+													id="[INSUZINE]_\#INSUZ">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[INSUZINE] #INSUZ
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Insuz | Shock | 5u = 40 Shock | 12u OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
+															Superheat Beaker<br>
+															50 Carbon<br>
+															50 Silicon<br>
+															25 Leporazine<br>
+															25 Kelotane<br>
+															25 Silicon</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>75 INSUZINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[SIGYNATE] \#SIGY" dir="auto" class="heading"
+													id="[SIGYNATE]_\#SIGY">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[SIGYNATE] #SIGY
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Sigy | Caustic | 5u = 30 Caustic | 16u OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
+															Superheat Beaker<br>
+															50 Chlorine<br>
+															50 Sodium<br>
+															Buffer Table Salt<br>
+															75 Hydrogen<br>
+															25 Nitrogen<br>
+															Buffer Ammonia<br>
+															25 Ammonia<br>
+															25 Table Salt<br>
+															25 Oxygen<br>
+															25 Carbon<br>
+															Buffer Sodium Carbonate<br>
+															50 Oxygen<br>
+															50 Hydrogen<br>
+															Buffer 50 Hydroxide<br>
+															50 Sodium<br>
+															Buffer Sodium Hydroxide<br>
+															50 Silicon<br>
+															50 Carbon<br>
+															Buffer Kelotane<br>
+															20 Sodium Carbonate<br>
+															20 Sodium Hydroxide<br>
+															20 Kelotane<br>
+															20 Water<br>
+															20 Sugar</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>80 SIGYNATE</strong></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="el-h4 heading-wrapper">
+										<h4 data-heading="Airloss / Bloodlevels" dir="auto" class="heading"
+											id="Airloss_/_Bloodlevels">
+											<div class="heading-collapse-indicator collapse-indicator collapse-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+													viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+													class="svg-icon right-triangle">
+													<path d="M3 8L12 17L21 8"></path>
+												</svg></div>Airloss / Bloodlevels
+										</h4>
+										<div class="heading-children">
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[DEXALIN PLUS] (AIRLOSS) \#DEX+" dir="auto"
+													class="heading" id="[DEXALIN_PLUS]_(AIRLOSS)_\#DEX+">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[DEXALIN PLUS] (AIRLOSS) #DEX+
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Dex+ | Airloss | 5u = 65 Airloss | 25u OD</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
+															1 Plasma<br>
+															50 Oxygen<br>
+															Buffer Dexalin and Plasma<br>
+															25 Iron<br>
+															25 Carbon<br>
+															25 Dexalin</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>75 DEXALIN PLUS</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[SALINE] (BLOOD LEVELS) \#SAL" dir="auto"
+													class="heading" id="[SALINE]_(BLOOD_LEVELS)_\#SAL">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[SALINE] (BLOOD LEVELS) #SAL
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Sal | Bloodlevels | 5u = 20% BloodLv | SAFE</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
+															Superheat Beaker<br>
+															20 Chlorine<br>
+															20 Sodium<br>
+															Put all in jug<br>
+															160 Water (Fill Jug)</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>200 SALINE</strong></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="el-h4 heading-wrapper">
+										<h4 data-heading="Cryo Chems" dir="auto" class="heading" id="Cryo_Chems">
+											<div class="heading-collapse-indicator collapse-indicator collapse-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+													viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+													class="svg-icon right-triangle">
+													<path d="M3 8L12 17L21 8"></path>
+												</svg></div>Cryo Chems
+										</h4>
+										<div class="heading-children">
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[CRYOXADONE] \#CRYOX" dir="auto" class="heading"
+													id="[CRYOXADONE]_\#CRYOX">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[CRYOXADONE] #CRYOX
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Cryox | All (No Genetic) | 213k</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
+															1 Plasma<br>
+															50 Oxygen<br>
+															Buffer Dexalin and Plasma<br>
+															25 Water<br>
+															25 Oxygen<br>
+															25 Dexalin</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>75 CRYOXADONE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[ALOXADONE] \#ALOX" dir="auto" class="heading"
+													id="[ALOXADONE]_\#ALOX">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[ALOXADONE] #ALOX
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Alox | Burns | 213k</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
+															40 Aloe (Grind Aloe from Botany)<br>
+															40 Sigynate<br>
+															20 Cryoxadone</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>80 ALOXADONE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[DOXARUBIXADONE] (The better Phalanx) \#DOXA"
+													dir="auto" class="heading"
+													id="[DOXARUBIXADONE]_(The_better_Phalanx)_\#DOXA">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[DOXARUBIXADONE] (The better Phalanx) #DOXA
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Dox | Genetic | 213k</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>ANY ORDER</strong>(CHEMMASTER)<br>
+															50 Cryoxadone<br>
+															50 Phalanxamine</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>100 DOXARUBIXADONE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[NECROSOL] (Not often used) \#NECRO" dir="auto"
+													class="heading" id="[NECROSOL]_(Not_often_used)_\#NECRO">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[NECROSOL] (Not often used) #NECRO
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Necro | Burn Brute Poison | 213k</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>ANY ORDER</strong>(CHEMMASTER)<br>
+															30 Blood<br>
+															20 Cryoxadone<br>
+															10 Omnizine (Grind Ambrosia Deus from Botany)</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>20 NECROSOL</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[STELLOXADONE] \#STELLOX" dir="auto" class="heading"
+													id="[STELLOXADONE]_\#STELLOX">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[STELLOXADONE] #STELLOX
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Stellox | Toxin | 213k</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>ANY ORDER</strong>(CHEMMASTER)<br>
+															50 Stellibinin<br>
+															30 Cryoxadone<br>
+															20 Arithrazine<br>
+															Buffer Water and Fiber</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>50 STELLOXADONE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[TRAUMOXADONE] \#TRAUMOX" dir="auto" class="heading"
+													id="[TRAUMOXADONE]_\#TRAUMOX">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[TRAUMOXADONE] #TRAUMOX
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Traumox | Brutes | 213k</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEMMASTER)<br>
+															25 Table Salt (1:1 Chlorine &amp; Sodium + HEAT)<br>
+															25 Ethanol<br>
+															25 Radium<br>
+															Buffer Lipozine<br>
+															25 Hydroxide (1:1 Hydrogen &amp; Oxygen + HEAT)<br>
+															25 Benzene (1:1 Hydrogen &amp; Carbon + HEAT)<br>
+															Buffer Phenol<br>
+															20 Phenol<br>
+															20 Sodium<br>
+															20 Carbon<br>
+															20 Oxygen<br>
+															20 Sulfuric Acid (2:1:1 Oxygen, Hydrogen &amp; Sulfur)<br>
+															Buffer Salicylic Acid<br>
+															25 Cryoxadone<br>
+															25 Salicylic Acid<br>
+															25 Lipozine</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>50 TRAUMOXADONE</strong></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="el-h4 heading-wrapper">
+										<h4 data-heading="Others" dir="auto" class="heading" id="Others">
+											<div class="heading-collapse-indicator collapse-indicator collapse-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+													viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+													class="svg-icon right-triangle">
+													<path d="M3 8L12 17L21 8"></path>
+												</svg></div>Others
+										</h4>
+										<div class="heading-children">
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[ARITHRAZINE] (Radiation) \#ARITH" dir="auto"
+													class="heading" id="[ARITHRAZINE]_(Radiation)_\#ARITH">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[ARITHRAZINE] (Radiation) #ARITH
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Arith | Radiation | 5u = 30 Rads | Causes Brute
+														</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEM DISPENSER)<br>
+															5 Silicon<br>
+															5 Potassium<br>
+															5 Nitrogen<br>
+															15 Radium<br>
+															30 Hydrogen</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>60 ARITHRAZINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[PHALANXAMINE] (Genetic, Dox is better now) \#PHALANX"
+													dir="auto" class="heading"
+													id="[PHALANXAMINE]_(Genetic,_Dox_is_better_now)_\#PHALANX">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[PHALANXAMINE] (Genetic, Dox is better now) #PHALANX
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Phal | Genetic | 5u = 10 Genetic | Causes Rads</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEM DISPENSER)<br>
+															5 Silicon<br>
+															5 Potassium<br>
+															5 Nitrogen<br>
+															25 Radium<br>
+															10 Phosphorus<br>
+															10 Chlorine<br>
+															30 Ethanol</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>60 PHALANXAMINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[TRICORDAZINE] (You usually don't need this) \#TRICOR"
+													dir="auto" class="heading"
+													id="[TRICORDAZINE]_(You_usually_don't_need_this)_\#TRICOR">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[TRICORDAZINE] (You usually don't need this) #TRICOR
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Trico | Brute/Burns/Poison | 5u = 10 Brute, 5
+															Burns &amp; Poison 50DMG | SAFE</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(CHEM DISPENSER)<br>
+															15 Carbon<br>
+															15 Oxygen<br>
+															15 Sugar<br>
+															15 Nitrogen<br>
+															15 Potassium<br>
+															15 Silicon</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>90 TRICORDAZINE</strong></p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[THE DOCTOR'S DELIGHT] (Usually the reason why Trico is made) \#TDD"
+													dir="auto" class="heading"
+													id="[THE_DOCTOR'S_DELIGHT]_(Usually_the_reason_why_Trico_is_made)_\#TDD">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[THE DOCTOR'S DELIGHT] (Usually the reason why Trico
+													is made) #TDD
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">TDD | All (No Genetic) | 5u = 10 Heal | SAFE</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><em>Note: You usually bother bar for this</em></p>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>IN ORDER</strong>(BAR)<br>
+															20 Cream<br>
+															10 Lime Juice<br>
+															10 Orange Juice<br>
+															10 Tomato Juice<br>
+															10 Tricordazine</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto"><strong>60 THE DOCTOR'S DELIGHT</strong></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="el-h4 heading-wrapper">
+										<h4 data-heading="Unsorted Shit" dir="auto" class="heading" id="Unsorted_Shit">
+											<div class="heading-collapse-indicator collapse-indicator collapse-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+													viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+													class="svg-icon right-triangle">
+													<path d="M3 8L12 17L21 8"></path>
+												</svg></div>Unsorted Shit
+										</h4>
+										<div class="heading-children">
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[PHENOL] \#PHENOL" dir="auto" class="heading"
+													id="[PHENOL]_\#PHENOL">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[PHENOL] #PHENOL
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">25 hydrox<br>
+															25 benzene</p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[OXANDROLONE] \#OXA" dir="auto" class="heading"
+													id="[OXANDROLONE]_\#OXA">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[OXANDROLONE] #OXA
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">25 sodium carbonate (25 ammonia, table salt, oxy,
+															carb)<br>
+															25 dermaline<br>
+															25 phenol<br>
+															25 lepo</p>
+													</div>
+													<div class="el-hr">
+														<hr>
+													</div>
+													<div class="el-p">
+														<p dir="auto">100 Oxa</p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[PENTENIC] \#PENT" dir="auto" class="heading"
+													id="[PENTENIC]_\#PENT">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[PENTENIC] #PENT
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">polytrinic acid<br>
+															20 sulfuric acid<br>
+															20 plasma<br>
+															20 potassium</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">potassium iodide<br>
+															50 potassium<br>
+															50 iodide</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">haloperidol<br>
+															20 aluminum<br>
+															20 chlorine<br>
+															20 fluorine<br>
+															20 oil<br>
+															20 potassium iodide</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">cyanide<br>
+															25 ammonia<br>
+															25 oil<br>
+															25 oxygen</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">25 poly<br>
+															25 potas<br>
+															25 halo<br>
+															25 cya<br>
+															============ 100 Pentenic</p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[SALICYLIC ACID] \#SALIC" dir="auto" class="heading"
+													id="[SALICYLIC_ACID]_\#SALIC">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[SALICYLIC ACID] #SALIC
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">tranexamic acid<br>
+															30 inap<br>
+															30 sulfuric acid<br>
+															30 sugar</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">fluorosulfuric acid<br>
+															25 fluorine<br>
+															25 hydrogen<br>
+															25 potass<br>
+															25 sulfuric acid</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">sodium hydroxide (sodium + hydrox)<br>
+															bicaridine ( you can't be this stupid )</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">25 tranex<br>
+															25 fluorosulf<br>
+															25 sodium hydrox<br>
+															25 bic</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">============ 100 salicylic</p>
+													</div>
+												</div>
+											</div>
+											<div class="el-h5 heading-wrapper">
+												<h5 data-heading="[PAX] \#PAX" dir="auto" class="heading"
+													id="[PAX]_\#PAX">
+													<div
+														class="heading-collapse-indicator collapse-indicator collapse-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+															viewBox="0 0 24 24" fill="none" stroke="currentColor"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" class="svg-icon right-triangle">
+															<path d="M3 8L12 17L21 8"></path>
+														</svg></div>[PAX] #PAX
+												</h5>
+												<div class="heading-children">
+													<div class="el-p">
+														<p dir="auto">Mindbreaker toxin<br>
+															Superheat Beaker<br>
+															30 silicon<br>
+															30 hydrogen<br>
+															30 dylovene</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">Synaptizine<br>
+															30 lithium<br>
+															30 sugar<br>
+															30 water</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">30 MB Toxin<br>
+															30 Synap<br>
+															30 Water</p>
+													</div>
+													<div class="el-p">
+														<p dir="auto">90 Pax</p>
+													</div>
+													<div class="mod-footer mod-ui"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar-right sidebar">
+			<div class="sidebar-handle"></div>
+			<div class="sidebar-topbar">
+				<div class="topbar-content"></div>
+				<div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+						height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+						stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+						<path
+							d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z">
+						</path>
+						<path d="M10 4V20"></path>
+						<path d="M4 7H7"></path>
+						<path d="M4 10H7"></path>
+						<path d="M4 13H7"></path>
+					</svg></div>
+			</div>
+			<div class="sidebar-content">
+				<div class="graph-view-wrapper">
+					<div class="sidebar-section-header">Interactive Graph</div>
+					<div class="graph-view-placeholder">
+						<div class="graph-view-container">
+							<div class="graph-icon graph-expand" role="button" aria-label="Expand"
+								data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+									height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+									stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+									<line x1="7" y1="17" x2="17" y2="7"></line>
+									<polyline points="7 7 17 7 17 17"></polyline>
+								</svg></div>
+							<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0">
+					<div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button
+							class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg
+								xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round"></svg></button></div>
+					<div class="tree-scroll-area tree-item-children nav-folder-children">
+						<div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed"
+							style="display: none;"></div>
+						<div class="tree-item" data-depth="1"><a class="tree-link"
+								href="chemguide.html#Chemistry">
+								<div class="tree-item-contents heading-link" heading-name="Chemistry"><span
+										class="tree-item-title">Chemistry</span></div>
+							</a>
+							<div class="tree-item-children nav-folder-children">
+								<div class="tree-item" data-depth="5"><a class="tree-link"
+										href="chemguide.html#LABELLING_CHEMICALS">
+										<div class="tree-item-contents heading-link" heading-name="LABELLING CHEMICALS">
+											<span class="tree-item-title">LABELLING CHEMICALS</span></div>
+									</a>
+									<div class="tree-item-children nav-folder-children"></div>
+								</div>
+								<div class="tree-item" data-depth="5"><a class="tree-link"
+										href="chemguide.html#SUPERHEATING">
+										<div class="tree-item-contents heading-link" heading-name="SUPERHEATING"><span
+												class="tree-item-title">SUPERHEATING</span></div>
+									</a>
+									<div class="tree-item-children nav-folder-children"></div>
+								</div>
+								<div class="tree-item" data-depth="5"><a class="tree-link"
+										href="chemguide.html#RESET_BEAKER_TEMP">
+										<div class="tree-item-contents heading-link" heading-name="RESET BEAKER TEMP">
+											<span class="tree-item-title">RESET BEAKER TEMP</span></div>
+									</a>
+									<div class="tree-item-children nav-folder-children"></div>
+								</div>
+								<div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link"
+										href="chemguide.html#Recipes">
+										<div class="tree-item-contents heading-link" heading-name="Recipes">
+											<div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" class="svg-icon right-triangle">
+													<path d="M3 8L12 17L21 8"></path>
+												</svg></div><span class="tree-item-title">Recipes</span>
+										</div>
+									</a>
+									<div class="tree-item-children nav-folder-children">
+										<div class="tree-item" data-depth="4"><a class="tree-link"
+												href="chemguide.html#Brutes">
+												<div class="tree-item-contents heading-link" heading-name="Brutes"><span
+														class="tree-item-title">Brutes</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="6"><a class="tree-link"
+												href="chemguide.html#[BICARIDINE]_\#BIC">
+												<div class="tree-item-contents heading-link"
+													heading-name="[BICARIDINE] \#BIC"><span
+														class="tree-item-title">[BICARIDINE] #BIC</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="6"><a class="tree-link"
+												href="chemguide.html#[BRUIZINE]_\#BRUIZ">
+												<div class="tree-item-contents heading-link"
+													heading-name="[BRUIZINE] \#BRUIZ"><span
+														class="tree-item-title">[BRUIZINE] #BRUIZ</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="6"><a class="tree-link"
+												href="chemguide.html#[PUNCTURASE]_\#PUNC">
+												<div class="tree-item-contents heading-link"
+													heading-name="[PUNCTURASE] \#PUNC"><span
+														class="tree-item-title">[PUNCTURASE] #PUNC</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="6"><a class="tree-link"
+												href="chemguide.html#[LACERINOL]_\#LACE">
+												<div class="tree-item-contents heading-link"
+													heading-name="[LACERINOL] \#LACE"><span
+														class="tree-item-title">[LACERINOL] #LACE</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="4"><a class="tree-link"
+												href="chemguide.html#Toxins">
+												<div class="tree-item-contents heading-link" heading-name="Toxins"><span
+														class="tree-item-title">Toxins</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="6"><a class="tree-link"
+												href="chemguide.html#[DYLOVENE]_\#DYLO">
+												<div class="tree-item-contents heading-link"
+													heading-name="[DYLOVENE] \#DYLO"><span
+														class="tree-item-title">[DYLOVENE] #DYLO</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[DIPHENHYDRAMINE]_\#DIPHEN">
+												<div class="tree-item-contents heading-link"
+													heading-name="[DIPHENHYDRAMINE] \#DIPHEN"><span
+														class="tree-item-title">[DIPHENHYDRAMINE] #DIPHEN</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[ULTRAVASCULINE]_\#ULTRAVASC">
+												<div class="tree-item-contents heading-link"
+													heading-name="[ULTRAVASCULINE] \#ULTRAVASC"><span
+														class="tree-item-title">[ULTRAVASCULINE] #ULTRAVASC</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[STELLIBININ]_\#STELLIB">
+												<div class="tree-item-contents heading-link"
+													heading-name="[STELLIBININ] \#STELLIB"><span
+														class="tree-item-title">[STELLIBININ] #STELLIB</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="4"><a class="tree-link"
+												href="chemguide.html#Burns">
+												<div class="tree-item-contents heading-link" heading-name="Burns"><span
+														class="tree-item-title">Burns</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[DERMALINE]_\#DERMA">
+												<div class="tree-item-contents heading-link"
+													heading-name="[DERMALINE] \#DERMA"><span
+														class="tree-item-title">[DERMALINE] #DERMA</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[LEPORAZINE]_\#LEPO">
+												<div class="tree-item-contents heading-link"
+													heading-name="[LEPORAZINE] \#LEPO"><span
+														class="tree-item-title">[LEPORAZINE] #LEPO</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[PYRAZINE]_\#PYRA">
+												<div class="tree-item-contents heading-link"
+													heading-name="[PYRAZINE] \#PYRA"><span
+														class="tree-item-title">[PYRAZINE] #PYRA</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[INSUZINE]_\#INSUZ">
+												<div class="tree-item-contents heading-link"
+													heading-name="[INSUZINE] \#INSUZ"><span
+														class="tree-item-title">[INSUZINE] #INSUZ</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[SIGYNATE]_\#SIGY">
+												<div class="tree-item-contents heading-link"
+													heading-name="[SIGYNATE] \#SIGY"><span
+														class="tree-item-title">[SIGYNATE] #SIGY</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="4"><a class="tree-link"
+												href="chemguide.html#Airloss_/_Bloodlevels">
+												<div class="tree-item-contents heading-link"
+													heading-name="Airloss / Bloodlevels"><span
+														class="tree-item-title">Airloss / Bloodlevels</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[DEXALIN_PLUS]_(AIRLOSS)_\#DEX+">
+												<div class="tree-item-contents heading-link"
+													heading-name="[DEXALIN PLUS] (AIRLOSS) \#DEX+"><span
+														class="tree-item-title">[DEXALIN PLUS] (AIRLOSS) #DEX+</span>
+												</div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[SALINE]_(BLOOD_LEVELS)_\#SAL">
+												<div class="tree-item-contents heading-link"
+													heading-name="[SALINE] (BLOOD LEVELS) \#SAL"><span
+														class="tree-item-title">[SALINE] (BLOOD LEVELS) #SAL</span>
+												</div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="4"><a class="tree-link"
+												href="chemguide.html#Cryo_Chems">
+												<div class="tree-item-contents heading-link" heading-name="Cryo Chems">
+													<span class="tree-item-title">Cryo Chems</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[CRYOXADONE]_\#CRYOX">
+												<div class="tree-item-contents heading-link"
+													heading-name="[CRYOXADONE] \#CRYOX"><span
+														class="tree-item-title">[CRYOXADONE] #CRYOX</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[ALOXADONE]_\#ALOX">
+												<div class="tree-item-contents heading-link"
+													heading-name="[ALOXADONE] \#ALOX"><span
+														class="tree-item-title">[ALOXADONE] #ALOX</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[DOXARUBIXADONE]_(The_better_Phalanx)_\#DOXA">
+												<div class="tree-item-contents heading-link"
+													heading-name="[DOXARUBIXADONE] (The better Phalanx) \#DOXA"><span
+														class="tree-item-title">[DOXARUBIXADONE] (The better Phalanx)
+														#DOXA</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[NECROSOL]_(Not_often_used)_\#NECRO">
+												<div class="tree-item-contents heading-link"
+													heading-name="[NECROSOL] (Not often used) \#NECRO"><span
+														class="tree-item-title">[NECROSOL] (Not often used)
+														#NECRO</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[STELLOXADONE]_\#STELLOX">
+												<div class="tree-item-contents heading-link"
+													heading-name="[STELLOXADONE] \#STELLOX"><span
+														class="tree-item-title">[STELLOXADONE] #STELLOX</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[TRAUMOXADONE]_\#TRAUMOX">
+												<div class="tree-item-contents heading-link"
+													heading-name="[TRAUMOXADONE] \#TRAUMOX"><span
+														class="tree-item-title">[TRAUMOXADONE] #TRAUMOX</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="4"><a class="tree-link"
+												href="chemguide.html#Others">
+												<div class="tree-item-contents heading-link" heading-name="Others"><span
+														class="tree-item-title">Others</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[ARITHRAZINE]_(Radiation)_\#ARITH">
+												<div class="tree-item-contents heading-link"
+													heading-name="[ARITHRAZINE] (Radiation) \#ARITH"><span
+														class="tree-item-title">[ARITHRAZINE] (Radiation) #ARITH</span>
+												</div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[PHALANXAMINE]_(Genetic,_Dox_is_better_now)_\#PHALANX">
+												<div class="tree-item-contents heading-link"
+													heading-name="[PHALANXAMINE] (Genetic, Dox is better now) \#PHALANX">
+													<span class="tree-item-title">[PHALANXAMINE] (Genetic, Dox is better
+														now) #PHALANX</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[TRICORDAZINE]_(You_usually_don't_need_this)_\#TRICOR">
+												<div class="tree-item-contents heading-link"
+													heading-name="[TRICORDAZINE] (You usually don't need this) \#TRICOR">
+													<span class="tree-item-title">[TRICORDAZINE] (You usually don't need
+														this) #TRICOR</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[THE_DOCTOR'S_DELIGHT]_(Usually_the_reason_why_Trico_is_made)_\#TDD">
+												<div class="tree-item-contents heading-link"
+													heading-name="[THE DOCTOR'S DELIGHT] (Usually the reason why Trico is made) \#TDD">
+													<span class="tree-item-title">[THE DOCTOR'S DELIGHT] (Usually the
+														reason why Trico is made) #TDD</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="4"><a class="tree-link"
+												href="chemguide.html#Unsorted_Shit">
+												<div class="tree-item-contents heading-link"
+													heading-name="Unsorted Shit"><span class="tree-item-title">Unsorted
+														Shit</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[PHENOL]_\#PHENOL">
+												<div class="tree-item-contents heading-link"
+													heading-name="[PHENOL] \#PHENOL"><span
+														class="tree-item-title">[PHENOL] #PHENOL</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[OXANDROLONE]_\#OXA">
+												<div class="tree-item-contents heading-link"
+													heading-name="[OXANDROLONE] \#OXA"><span
+														class="tree-item-title">[OXANDROLONE] #OXA</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[PENTENIC]_\#PENT">
+												<div class="tree-item-contents heading-link"
+													heading-name="[PENTENIC] \#PENT"><span
+														class="tree-item-title">[PENTENIC] #PENT</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[SALICYLIC_ACID]_\#SALIC">
+												<div class="tree-item-contents heading-link"
+													heading-name="[SALICYLIC ACID] \#SALIC"><span
+														class="tree-item-title">[SALICYLIC ACID] #SALIC</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+										<div class="tree-item" data-depth="5"><a class="tree-link"
+												href="chemguide.html#[PAX]_\#PAX">
+												<div class="tree-item-contents heading-link" heading-name="[PAX] \#PAX">
+													<span class="tree-item-title">[PAX] #PAX</span></div>
+											</a>
+											<div class="tree-item-children nav-folder-children"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script defer="">
+				let rs = document.querySelector(".sidebar-right");
+				rs.classList.add("is-collapsed");
+				if (window.innerWidth > 768) rs.classList.remove("is-collapsed");
+				rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));
+			</script>
+		</div>
+	</div>
+</body>
+
+</html>
